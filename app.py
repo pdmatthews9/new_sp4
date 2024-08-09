@@ -1,6 +1,14 @@
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+
+title = "Vehicle Data and Analytics"
+print(title.title())
+
+#Introduction: 
+# This project uses vehicle data to generate visualizations and analytics that can assist in market research and strategical pricing. 
+# The dashboad, includes a histogram displaying the 'most valued' vehicle type based on the sum of prices; and a scatter-plot displaying how an odometer reading can dictate the price of a vehiclie. 
 
 df = pd.read_csv('vehicles_us.csv')
 
@@ -14,3 +22,7 @@ st.plotly_chart(scattfig)
 
 if st.checkbox('Display Scatter Plot'):
     st.plotly_chart(scattfig)
+
+#Conclusion 
+# The data displayed within the histogram informs the marketing team that trucks are their most expensive asset with a price sum of over $200M (This does not include pick-ups)
+#The scatterplot proves that mileage and price are negatively correlated. As the odometer reading increase, the vehicle price decrease. This is a key metric used to determine vehicle value and appraisal. 
