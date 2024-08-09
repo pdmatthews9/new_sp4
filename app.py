@@ -9,7 +9,7 @@ price_threshold = 50000
 title = "Vehicle Data and Analytics"
 print(title.title())
 
-#Introduction: 
+##Introduction: 
 # This project uses vehicle data to generate visualizations and analytics that can assist in market research and strategical pricing. 
 # The dashboad, includes a histogram displaying the 'most valued' vehicle type based on the sum of prices; and a scatter-plot displaying how an odometer reading can dictate the price of a vehiclie. 
 
